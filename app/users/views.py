@@ -40,7 +40,7 @@ def logout_view(request):
     logout(request)
     return redirect('login')
 
-@login_required
+@login_required(login_url='login')
 def home_view(request):
     return render(request, 'main.html', {})
 
