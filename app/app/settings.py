@@ -46,6 +46,9 @@ INSTALLED_APPS = [
     "widget_tweaks",
 
     'django.contrib.staticfiles',
+
+    # muapp
+    'homepage.apps.HomepageConfig',
     
 ]
 
