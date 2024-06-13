@@ -42,10 +42,10 @@ deactivate nondestructive
 if [ "$OSTYPE" = "cygwin" ] || [ "$OSTYPE" = "msys" ] ; then
     # transform D:\path\to\venv to /d/path/to/venv on MSYS
     # and to /cygdrive/d/path/to/venv on Cygwin
-    export VIRTUAL_ENV=$(cygpath "C:\Users\Asus\Desktop\django-FaceID\myenvsfaceid")
+    export VIRTUAL_ENV=$(cygpath "C:\Users\Asus\Desktop\a\django-FaceID\myenvsall")
 else
     # use the path as-is
-    export VIRTUAL_ENV="C:\Users\Asus\Desktop\django-FaceID\myenvsfaceid"
+    export VIRTUAL_ENV="C:\Users\Asus\Desktop\a\django-FaceID\myenvsall"
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"
@@ -62,9 +62,9 @@ fi
 
 if [ -z "${VIRTUAL_ENV_DISABLE_PROMPT:-}" ] ; then
     _OLD_VIRTUAL_PS1="${PS1:-}"
-    PS1="(myenvsfaceid) ${PS1:-}"
+    PS1="(myenvsall) ${PS1:-}"
     export PS1
-    VIRTUAL_ENV_PROMPT="(myenvsfaceid) "
+    VIRTUAL_ENV_PROMPT="(myenvsall) "
     export VIRTUAL_ENV_PROMPT
 fi
 
